@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mergington High School Activities</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      .app {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .header h1 {
+        margin-bottom: 0.5rem;
+        font-size: 2.5rem;
+      }
+
+      .header h2 {
+        font-size: 1.5rem;
+        font-weight: 300;
+      }
+
+      .landing-page {
+        flex: 1;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      .welcome-section {
+        text-align: center;
+        margin-bottom: 3rem;
+        padding: 2rem;
+        background: #f8f9fa;
+        border-radius: 8px;
+      }
+
+      .welcome-section h2 {
+        color: #667eea;
+        margin-bottom: 1rem;
+      }
+
+      .welcome-section p {
+        font-size: 1.1rem;
+        color: #666;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .activities h3 {
+        color: #333;
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+      }
+
+      .activities-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .activity-card {
+        background: white;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 1.5rem;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+
+      .activity-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .activity-card h4 {
+        color: #667eea;
+        margin-bottom: 0.75rem;
+        font-size: 1.3rem;
+      }
+
+      .activity-card p {
+        color: #666;
+        margin-bottom: 0.5rem;
+      }
+
+      .activity-card .schedule {
+        color: #999;
+        font-size: 0.9rem;
+        font-style: italic;
+      }
+
+      .footer {
+        background: #2c3e50;
+        color: white;
+        text-align: center;
+        padding: 1.5rem;
+        margin-top: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

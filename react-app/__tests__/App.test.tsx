@@ -5,12 +5,14 @@ import App from '../App';
 describe('App', () => {
   it('renders without crashing', () => {
     render(<App />);
-    expect(screen.getByText(/Mergington High School/i)).toBeInTheDocument();
+    const heading = screen.getByRole('heading', { name: /Mergington High School/i, level: 1 });
+    expect(heading).toBeInTheDocument();
   });
 
   it('contains Header component', () => {
     render(<App />);
-    expect(screen.getByText(/Extracurricular Activities/i)).toBeInTheDocument();
+    const subheading = screen.getByRole('heading', { name: /Extracurricular Activities/i, level: 2 });
+    expect(subheading).toBeInTheDocument();
   });
 
   it('contains LandingPage component', () => {

@@ -39,12 +39,23 @@
         </form>
         <div id="message" class="hidden"></div>
       </section>
+
+      <section id="newsletter-container">
+        <!-- Newsletter signup component will be rendered here -->
+      </section>
     </main>
 
     <footer>
       <p>&copy; 2023 Mergington High School</p>
     </footer>
 
+    <script src="newsletter-signup.js"></script>
     <script src="app.js"></script>
+    <script>
+      // Initialize newsletter signup component
+      document.addEventListener('DOMContentLoaded', () => {
+        new NewsletterSignup('newsletter-container');
+      });
+    </script>
   </body>
 </html>
